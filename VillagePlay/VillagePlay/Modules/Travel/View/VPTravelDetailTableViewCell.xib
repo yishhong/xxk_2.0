@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="VPTravelDetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tab_ tour_location" translatesAutoresizingMaskIntoConstraints="NO" id="RXn-dN-gRQ">
+                        <rect key="frame" x="10" y="15" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="M8P-pB-hiE"/>
+                            <constraint firstAttribute="height" constant="16" id="UMp-kw-eTc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活动开始时间:2016-10-20-2016-10-26" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeE-dg-iqB">
+                        <rect key="frame" x="38" y="16" width="258" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="oi0-qA-03F"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecr-kt-N4a">
+                        <rect key="frame" x="12" y="44" width="308" height="1"/>
+                        <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="NHF-nP-BxE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tab_ tour_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="ebO-73-CC1">
+                        <rect key="frame" x="296" y="15" width="12" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="4d6-L7-H7j"/>
+                            <constraint firstAttribute="width" constant="12" id="gsQ-xx-n2B"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ebO-73-CC1" firstAttribute="leading" secondItem="WeE-dg-iqB" secondAttribute="trailing" id="5Ia-Xa-egS"/>
+                    <constraint firstItem="RXn-dN-gRQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="KRq-Sf-jU5"/>
+                    <constraint firstItem="WeE-dg-iqB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="OD2-JT-Uv0"/>
+                    <constraint firstItem="ebO-73-CC1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="WfF-23-5Y8"/>
+                    <constraint firstAttribute="trailing" secondItem="ebO-73-CC1" secondAttribute="trailing" constant="12" id="X0X-el-JVK"/>
+                    <constraint firstItem="ebO-73-CC1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YX2-Vd-GN1"/>
+                    <constraint firstItem="RXn-dN-gRQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="aKZ-H0-0gc"/>
+                    <constraint firstItem="WeE-dg-iqB" firstAttribute="centerY" secondItem="RXn-dN-gRQ" secondAttribute="centerY" id="cbT-hR-Mfy"/>
+                    <constraint firstAttribute="bottom" secondItem="Ecr-kt-N4a" secondAttribute="bottom" id="gr0-I8-S3g"/>
+                    <constraint firstAttribute="trailing" secondItem="Ecr-kt-N4a" secondAttribute="trailing" id="l4P-7N-BIt"/>
+                    <constraint firstItem="Ecr-kt-N4a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="sAs-Pk-bkZ"/>
+                    <constraint firstItem="RXn-dN-gRQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sZb-Nm-0RI"/>
+                    <constraint firstItem="WeE-dg-iqB" firstAttribute="leading" secondItem="RXn-dN-gRQ" secondAttribute="trailing" constant="12" id="zQ0-t4-JKO"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="KRq-Sf-jU5"/>
+                        <exclude reference="OD2-JT-Uv0"/>
+                        <exclude reference="WfF-23-5Y8"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="image_icon" destination="RXn-dN-gRQ" id="FAe-Vi-EV5"/>
+                <outlet property="jumpImageView" destination="ebO-73-CC1" id="M71-Vb-5k7"/>
+                <outlet property="lineLabel" destination="Ecr-kt-N4a" id="Dib-Nb-DcQ"/>
+                <outlet property="titleLabel" destination="WeE-dg-iqB" id="1ub-a7-U5X"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tab_ tour_arrow" width="12" height="12"/>
+        <image name="tab_ tour_location" width="12" height="12"/>
+    </resources>
+</document>

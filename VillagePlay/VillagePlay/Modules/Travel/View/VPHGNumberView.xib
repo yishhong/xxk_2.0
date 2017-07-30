@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VPHGNumberView">
+            <rect key="frame" x="0.0" y="0.0" width="107" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kt2-M1-AaE">
+                    <rect key="frame" x="74" y="0.0" width="33" height="32"/>
+                    <state key="normal" image="tab_tour_plus">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="OSa-Ac-fwq"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="88N-Ei-M7J">
+                    <rect key="frame" x="32" y="0.0" width="43" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="43" id="VvM-ZU-E8S"/>
+                        <constraint firstAttribute="height" constant="32" id="eFE-au-aZD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06A-9P-oqV">
+                    <rect key="frame" x="0.0" y="0.0" width="33" height="32"/>
+                    <state key="normal" image="tab_tour_reduce">
+                        <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="subtractAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Z8l-Jo-MqL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Kt2-M1-AaE" secondAttribute="bottom" id="40g-Mp-bfP"/>
+                <constraint firstItem="Kt2-M1-AaE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7Mn-9B-1Qi"/>
+                <constraint firstItem="Kt2-M1-AaE" firstAttribute="leading" secondItem="88N-Ei-M7J" secondAttribute="trailing" constant="-1" id="Egr-Ej-zxz"/>
+                <constraint firstItem="88N-Ei-M7J" firstAttribute="leading" secondItem="06A-9P-oqV" secondAttribute="trailing" constant="-1" id="JZD-BS-lVj"/>
+                <constraint firstAttribute="trailing" secondItem="Kt2-M1-AaE" secondAttribute="trailing" id="MCt-0H-o1m"/>
+                <constraint firstItem="88N-Ei-M7J" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Pvu-D0-rae"/>
+                <constraint firstItem="06A-9P-oqV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="T7R-YI-qby"/>
+                <constraint firstItem="88N-Ei-M7J" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VRM-aR-hJQ"/>
+                <constraint firstItem="06A-9P-oqV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Y0F-xP-OFq"/>
+                <constraint firstAttribute="bottom" secondItem="06A-9P-oqV" secondAttribute="bottom" id="qAD-N1-RfT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addButton" destination="Kt2-M1-AaE" id="omj-e0-Dyu"/>
+                <outlet property="numberTextField" destination="88N-Ei-M7J" id="qv7-XR-NZg"/>
+                <outlet property="subtractButton" destination="06A-9P-oqV" id="FCf-Lv-LTF"/>
+            </connections>
+            <point key="canvasLocation" x="96.5" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tab_tour_plus" width="12" height="12"/>
+        <image name="tab_tour_reduce" width="12" height="12"/>
+    </resources>
+</document>

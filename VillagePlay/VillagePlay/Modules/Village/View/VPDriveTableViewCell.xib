@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="VPDriveTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="出行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZO-u2-O8y">
+                        <rect key="frame" x="12" y="16" width="327" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="Ql2-ac-vwK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tab_ tour_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="P9m-Gp-WPQ">
+                        <rect key="frame" x="351" y="16" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="iog-sM-Zqz"/>
+                            <constraint firstAttribute="height" constant="12" id="mtf-0y-7zs"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="P9m-Gp-WPQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="3tQ-Xz-emP"/>
+                    <constraint firstItem="CZO-u2-O8y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="87H-Zf-ZUx"/>
+                    <constraint firstAttribute="trailing" secondItem="P9m-Gp-WPQ" secondAttribute="trailing" constant="12" id="EzQ-4R-tBs"/>
+                    <constraint firstItem="P9m-Gp-WPQ" firstAttribute="leading" secondItem="CZO-u2-O8y" secondAttribute="trailing" constant="12" id="FtW-oa-A4v"/>
+                    <constraint firstItem="CZO-u2-O8y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="XRB-Dq-i2G"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="draveLabel" destination="CZO-u2-O8y" id="Ym4-PV-Hgy"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tab_ tour_arrow" width="12" height="12"/>
+    </resources>
+</document>

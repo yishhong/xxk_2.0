@@ -1,0 +1,97 @@
+source 'https://github.com/CocoaPods/Specs.git'
+#use_frameworks!
+inhibit_all_warnings!
+platform :ios, '8.0'
+
+def Pods
+    #友盟分析 包含IDFA版本
+    pod 'UMengAnalytics'
+	#U-Share SDK UI模块
+    pod 'UMengUShare/UI'
+    # 集成新浪微博
+    pod 'UMengUShare/Social/Sina'
+    # 集成微信
+    pod 'UMengUShare/Social/WeChat'
+    # 集成QQ
+    pod 'UMengUShare/Social/QQ'
+    #RAC
+#    pod 'ReactiveCocoa', '~> 2.5'
+#    pod 'ReactiveViewModel'
+    #空数据页面显示
+    pod 'DZNEmptyDataSet'
+	#在线web浏览视图控制器
+#    pod 'TOWebViewController'
+    #
+    pod 'UITextView+Placeholder', '~> 1.2'
+    #HUD 提示框
+    pod 'MBProgressHUD'
+    #下拉上拉刷新
+    pod 'MJRefresh'
+	#照片选择&&浏览
+    pod 'IDMPhotoBrowser', '~> 1.8.3'
+    #选择图片
+    pod 'CTAssetsPickerController'
+    #图片下载管理
+    pod 'SDWebImage'
+    pod 'YYWebImage'
+    #滚动Banner
+    pod 'SDCycleScrollView','~> 1.64'
+	#OC扩展类
+    pod 'libextobjc'
+	#键盘事件
+    pod 'IQKeyboardManager'
+    #滑块选择器
+    pod 'BMASliders'
+    #自动计算UITableView高度
+    pod 'UITableView+FDTemplateLayoutCell'
+	#JSON转换Model库
+    pod 'YYModel'
+	#LevelDB数据库
+    pod 'Objective-LevelDB'
+# 	pod 'Realm'
+    #代码自动布局
+    pod 'Masonry', '~> 0.6.3'
+    #网络库
+    pod 'AFNetworking'
+	# 获取设备信息
+    pod 'UIDeviceUtil'
+	#按钮的点击区域扩展
+    pod 'UIButton+TouchAreaInsets'
+    #JS与OC的交互
+    pod 'WebViewJavascriptBridge', '~> 5.0'
+    #加载xib
+    pod 'XXNibBridge'
+    #弹出框
+    pod 'CNPPopupController'
+    #极光推送
+    pod 'JPush', '2.2.0'
+    #百度地图
+    pod 'BaiduMapKit', '3.1.0'
+    #七牛云存储
+    pod 'Qiniu', '~> 7.1'
+	# 方便调试的辅助插件
+    pod 'FLEX'
+#     pod 'LumberjackConsole'
+#     pod 'CocoaLumberjack','~> 2.4.0'
+#     pod 'NBULog'
+#     post_install do |installer_representation|
+#         installer_representation.pods_project.targets.each do |target|
+#             if target.name == "NBULog"
+#                 target.build_configurations.each do |config|
+#                     if config.name == "Debug"
+#                         config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)', 'NBU_SHOW_DASHBOARD=1']
+#                     end
+#                 end
+#             end
+#         end
+#     end
+end
+
+#正常版本
+target "VillagePlay" do
+    Pods()
+end
+#单元测试
+target "VillagePlayTests" do
+    Pods()
+end

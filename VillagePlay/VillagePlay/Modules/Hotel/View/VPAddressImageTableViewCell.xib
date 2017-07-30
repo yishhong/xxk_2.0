@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="VPAddressImageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lx7-cT-eNO" userLabel="lineLabel">
+                        <rect key="frame" x="0.0" y="110" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="zdk-cf-YZc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel" translatesAutoresizingMaskIntoConstraints="NO" id="PgS-3i-JBR">
+                        <rect key="frame" x="12" y="0.0" width="351" height="99"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="99" id="1Me-zr-Y39"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="lx7-cT-eNO" secondAttribute="bottom" id="3xa-V6-5mx"/>
+                    <constraint firstItem="PgS-3i-JBR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="5d4-Pu-NjB"/>
+                    <constraint firstAttribute="trailing" secondItem="lx7-cT-eNO" secondAttribute="trailing" id="Ssx-Kt-Fn3"/>
+                    <constraint firstItem="lx7-cT-eNO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VKp-ig-yUr"/>
+                    <constraint firstItem="PgS-3i-JBR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="W6h-F0-eRt"/>
+                    <constraint firstAttribute="bottom" secondItem="lx7-cT-eNO" secondAttribute="bottom" id="bUJ-CE-oeI"/>
+                    <constraint firstAttribute="trailing" secondItem="PgS-3i-JBR" secondAttribute="trailing" constant="12" id="beu-qL-7nU"/>
+                    <constraint firstAttribute="trailing" secondItem="lx7-cT-eNO" secondAttribute="trailing" id="p97-bG-xRT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressImageView" destination="PgS-3i-JBR" id="ApA-ey-tT2"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="travel" width="282" height="175"/>
+    </resources>
+</document>

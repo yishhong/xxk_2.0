@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="VPCommentContentImageViewTableViewCell" id="KGk-i7-Jjw" customClass="VPCommentContentImageViewTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAs-Yo-1kA" userLabel="lineView">
+                        <rect key="frame" x="12" y="83" width="363" height="1"/>
+                        <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="iYL-Rl-iq1"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jhf-X9-ATG" customClass="VPCommentCollectionView">
+                        <rect key="frame" x="62" y="0.0" width="301" height="69"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Jhf-X9-ATG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8Ce-Ra-lKM"/>
+                    <constraint firstAttribute="trailing" secondItem="mAs-Yo-1kA" secondAttribute="trailing" id="GsO-7D-n5E"/>
+                    <constraint firstAttribute="bottom" secondItem="mAs-Yo-1kA" secondAttribute="bottom" id="Zba-O0-4hg"/>
+                    <constraint firstAttribute="trailing" secondItem="Jhf-X9-ATG" secondAttribute="trailing" constant="12" id="Zer-CT-tvk"/>
+                    <constraint firstItem="Jhf-X9-ATG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="62" id="dJx-nN-ziU"/>
+                    <constraint firstItem="mAs-Yo-1kA" firstAttribute="top" secondItem="Jhf-X9-ATG" secondAttribute="bottom" constant="14" id="hQH-Ht-hWl"/>
+                    <constraint firstItem="mAs-Yo-1kA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="qhC-TO-m7s"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentCollectionView" destination="Jhf-X9-ATG" id="ZlH-E5-ggJ"/>
+            </connections>
+            <point key="canvasLocation" x="284.5" y="326.5"/>
+        </tableViewCell>
+    </objects>
+</document>

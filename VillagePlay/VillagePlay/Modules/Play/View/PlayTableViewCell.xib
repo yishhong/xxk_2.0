@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="PlayTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hpT-Ch-jbp">
+                        <rect key="frame" x="12" y="12" width="114" height="81"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="81" id="OUs-vW-ZiK"/>
+                            <constraint firstAttribute="width" constant="114" id="YD6-Fx-vb3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="长沙—星沙周边两日精选玩法推荐(采茶、住宿、摄影、赏花)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANz-mL-gul">
+                        <rect key="frame" x="138" y="14" width="225" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="浔龙河—金井" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="be4-54-x2e">
+                        <rect key="frame" x="138" y="59" width="225" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="0td-tV-rYo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2天|适合5,6,7月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUB-C2-fpD">
+                        <rect key="frame" x="138" y="79.5" width="95" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="ORG-fs-BoQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBL-ND-aep">
+                        <rect key="frame" x="12" y="103" width="363" height="1"/>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="BT3-Ni-wLs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hpT-Ch-jbp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="CXU-QK-VIT"/>
+                    <constraint firstAttribute="trailing" secondItem="PBL-ND-aep" secondAttribute="trailing" id="Cif-SO-yxO"/>
+                    <constraint firstAttribute="bottom" secondItem="PBL-ND-aep" secondAttribute="bottom" id="G4Q-Eo-CHJ"/>
+                    <constraint firstAttribute="trailing" secondItem="be4-54-x2e" secondAttribute="trailing" constant="12" id="Gma-TV-1WT"/>
+                    <constraint firstItem="ANz-mL-gul" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="HNn-32-D8V"/>
+                    <constraint firstItem="be4-54-x2e" firstAttribute="leading" secondItem="hpT-Ch-jbp" secondAttribute="trailing" constant="12" id="IXh-3g-mfw"/>
+                    <constraint firstItem="YUB-C2-fpD" firstAttribute="top" secondItem="be4-54-x2e" secondAttribute="bottom" constant="9" id="Jzc-TR-oDt"/>
+                    <constraint firstItem="YUB-C2-fpD" firstAttribute="leading" secondItem="hpT-Ch-jbp" secondAttribute="trailing" constant="12" id="VQc-FP-uOs"/>
+                    <constraint firstItem="PBL-ND-aep" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="VZ6-BM-kRt"/>
+                    <constraint firstItem="ANz-mL-gul" firstAttribute="leading" secondItem="hpT-Ch-jbp" secondAttribute="trailing" constant="12" id="aKc-8I-45s"/>
+                    <constraint firstItem="hpT-Ch-jbp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="e9g-bU-HiN"/>
+                    <constraint firstItem="be4-54-x2e" firstAttribute="top" secondItem="ANz-mL-gul" secondAttribute="bottom" constant="11" id="eV5-Yy-HeB"/>
+                    <constraint firstAttribute="trailing" secondItem="ANz-mL-gul" secondAttribute="trailing" constant="12" id="qiy-dS-RTK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressNameLabel" destination="be4-54-x2e" id="lqg-JB-Vav"/>
+                <outlet property="playImageView" destination="hpT-Ch-jbp" id="Hj0-Rb-elL"/>
+                <outlet property="playTitleLabel" destination="ANz-mL-gul" id="Xog-nT-NcT"/>
+                <outlet property="timeLabel" destination="YUB-C2-fpD" id="5I0-Ou-vTM"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

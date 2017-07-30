@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="TravelOrderNameTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vp_order_icon_flage" translatesAutoresizingMaskIntoConstraints="NO" id="sNU-CY-Ghs">
+                        <rect key="frame" x="12" y="13" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="DoP-ho-JNQ"/>
+                            <constraint firstAttribute="height" constant="14" id="tEc-Pt-TQW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="品味千年窑都" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhf-cB-KTi">
+                        <rect key="frame" x="34" y="12" width="329" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="7bA-mY-VwS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bhf-cB-KTi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="6wa-qd-FaD"/>
+                    <constraint firstItem="bhf-cB-KTi" firstAttribute="leading" secondItem="sNU-CY-Ghs" secondAttribute="trailing" constant="8" id="IHD-5o-2md"/>
+                    <constraint firstItem="sNU-CY-Ghs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="OE7-hJ-dzM"/>
+                    <constraint firstAttribute="trailing" secondItem="bhf-cB-KTi" secondAttribute="trailing" constant="12" id="jY5-6O-PnH"/>
+                    <constraint firstItem="sNU-CY-Ghs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="toz-J2-63w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameImageView" destination="sNU-CY-Ghs" id="Ndm-E5-s1R"/>
+                <outlet property="nameLabel" destination="bhf-cB-KTi" id="uSj-NH-JcK"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="vp_order_icon_flage" width="17" height="17"/>
+    </resources>
+</document>

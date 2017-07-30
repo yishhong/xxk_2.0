@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="VPHotelTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="316"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="315.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LOt-DE-OQr">
+                        <rect key="frame" x="0.0" y="10" width="375" height="234"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="234" id="wKh-4a-hMo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="怡家民宿酒店" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zkg-h5-XdM">
+                        <rect key="frame" x="14" y="260" width="347" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离我当前位置14.6k" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyY-rJ-qRk">
+                        <rect key="frame" x="14" y="294" width="116" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="k9B-at-hID"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qae-WR-chf">
+                        <rect key="frame" x="300.5" y="291" width="56.5" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="wgn-bH-zqS"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="￥">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.38039215686274508" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="17" name="PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="168">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.38039215686274508" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="起">
+                                <attributes>
+                                    <color key="NSColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="11" name="PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AyY-rJ-qRk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="2cy-Jc-gRz"/>
+                    <constraint firstItem="Zkg-h5-XdM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="4Fo-NR-SgS"/>
+                    <constraint firstAttribute="trailing" secondItem="LOt-DE-OQr" secondAttribute="trailing" id="D7s-Ns-fka"/>
+                    <constraint firstItem="Qae-WR-chf" firstAttribute="top" secondItem="Zkg-h5-XdM" secondAttribute="bottom" constant="10" id="L8N-KJ-eQT"/>
+                    <constraint firstItem="LOt-DE-OQr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="RIG-mn-KOY"/>
+                    <constraint firstItem="LOt-DE-OQr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="RlT-KV-7lJ"/>
+                    <constraint firstItem="AyY-rJ-qRk" firstAttribute="top" secondItem="Zkg-h5-XdM" secondAttribute="bottom" constant="13" id="rSc-iB-7bk"/>
+                    <constraint firstAttribute="trailing" secondItem="Qae-WR-chf" secondAttribute="trailing" constant="18" id="tNX-VZ-fWi"/>
+                    <constraint firstAttribute="trailing" secondItem="Zkg-h5-XdM" secondAttribute="trailing" constant="14" id="xAL-d7-ehA"/>
+                    <constraint firstItem="Zkg-h5-XdM" firstAttribute="top" secondItem="LOt-DE-OQr" secondAttribute="bottom" constant="16" id="zs7-0p-fM8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="distanceLabel" destination="AyY-rJ-qRk" id="uo6-vA-L3T"/>
+                <outlet property="headImageView" destination="LOt-DE-OQr" id="130-3G-721"/>
+                <outlet property="nameLabel" destination="Zkg-h5-XdM" id="MFY-SM-aO6"/>
+                <outlet property="priceLabel" destination="Qae-WR-chf" id="z3S-hK-XGE"/>
+            </connections>
+            <point key="canvasLocation" x="358.5" y="326.5"/>
+        </tableViewCell>
+    </objects>
+</document>

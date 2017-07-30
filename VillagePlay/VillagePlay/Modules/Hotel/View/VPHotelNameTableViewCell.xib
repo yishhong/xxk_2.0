@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="VPHotelNameTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="怡家民宿酒店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXQ-TO-NBE">
+                        <rect key="frame" x="14" y="18" width="102" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="0BO-e8-fyK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXE-TS-THX">
+                        <rect key="frame" x="14" y="53" width="90" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="H3V-Ab-xL3"/>
+                            <constraint firstAttribute="width" constant="90" id="QdQ-R9-DZK"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="58条评论" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSs-Ks-fK8">
+                        <rect key="frame" x="117" y="55" width="47" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="von-8r-CpH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aXQ-TO-NBE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="EKs-lf-TGU"/>
+                    <constraint firstItem="yXE-TS-THX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="FJA-Zv-uaM"/>
+                    <constraint firstItem="aXQ-TO-NBE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="FdN-C2-Lg5"/>
+                    <constraint firstItem="qSs-Ks-fK8" firstAttribute="top" secondItem="aXQ-TO-NBE" secondAttribute="bottom" constant="20" id="TCK-p7-F5a"/>
+                    <constraint firstItem="qSs-Ks-fK8" firstAttribute="leading" secondItem="yXE-TS-THX" secondAttribute="trailing" constant="13" id="Z5P-O3-tN2"/>
+                    <constraint firstItem="yXE-TS-THX" firstAttribute="top" secondItem="aXQ-TO-NBE" secondAttribute="bottom" constant="18" id="dBc-kL-lPY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentNumber" destination="qSs-Ks-fK8" id="QUF-ob-Pfb"/>
+                <outlet property="nameLabel" destination="aXQ-TO-NBE" id="ANn-Lv-Sdq"/>
+                <outlet property="starView" destination="yXE-TS-THX" id="0DD-H9-rwv"/>
+            </connections>
+            <point key="canvasLocation" x="359" y="326.5"/>
+        </tableViewCell>
+    </objects>
+</document>

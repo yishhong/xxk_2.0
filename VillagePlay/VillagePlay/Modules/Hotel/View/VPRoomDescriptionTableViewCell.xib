@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="VPRoomDescriptionTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="房间说明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dt8-9x-8tj">
+                        <rect key="frame" x="12" y="10" width="351" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="RC9-aY-5q3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ymr-RR-ovB">
+                        <rect key="frame" x="12" y="33" width="363" height="1"/>
+                        <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="yUh-sS-0Zf"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="房间面积:100m²" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrW-Sc-t4r">
+                        <rect key="frame" x="12" y="50" width="96" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="QXw-4e-hhQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="房床信息:大床" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLj-gp-dg9">
+                        <rect key="frame" x="12" y="75" width="83.5" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="WF7-t0-3qT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="床的数量:2张" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxy-aI-Glm">
+                        <rect key="frame" x="12" y="100" width="78" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="Wyy-ND-hXe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nxy-aI-Glm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="4wb-6d-6Fa"/>
+                    <constraint firstAttribute="trailing" secondItem="Dt8-9x-8tj" secondAttribute="trailing" constant="12" id="EiJ-YO-oMD"/>
+                    <constraint firstItem="nxy-aI-Glm" firstAttribute="top" secondItem="BLj-gp-dg9" secondAttribute="bottom" constant="12" id="QNQ-OC-2dJ"/>
+                    <constraint firstItem="Ymr-RR-ovB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Qqd-jN-arX"/>
+                    <constraint firstItem="Dt8-9x-8tj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="U7q-ld-sQj"/>
+                    <constraint firstItem="xrW-Sc-t4r" firstAttribute="top" secondItem="Ymr-RR-ovB" secondAttribute="bottom" constant="16" id="URs-UQ-ddJ"/>
+                    <constraint firstItem="BLj-gp-dg9" firstAttribute="top" secondItem="xrW-Sc-t4r" secondAttribute="bottom" constant="12" id="Unb-M6-hcb"/>
+                    <constraint firstItem="BLj-gp-dg9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="YWs-G8-oNA"/>
+                    <constraint firstAttribute="trailing" secondItem="Ymr-RR-ovB" secondAttribute="trailing" id="quk-Ks-yxx"/>
+                    <constraint firstItem="Ymr-RR-ovB" firstAttribute="top" secondItem="Dt8-9x-8tj" secondAttribute="bottom" constant="10" id="sgi-fd-Cwc"/>
+                    <constraint firstItem="Dt8-9x-8tj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="t8I-dd-j58"/>
+                    <constraint firstItem="xrW-Sc-t4r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="u6g-5A-B2b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lb_BedNumber" destination="nxy-aI-Glm" id="wde-7k-Myz"/>
+                <outlet property="lb_RoomArea" destination="xrW-Sc-t4r" id="dEd-8m-hOH"/>
+                <outlet property="lb_RoomBedInformation" destination="BLj-gp-dg9" id="Ebl-lW-pon"/>
+            </connections>
+            <point key="canvasLocation" x="358.5" y="326.5"/>
+        </tableViewCell>
+    </objects>
+</document>

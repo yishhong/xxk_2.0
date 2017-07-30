@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="VPFacilitiesTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jc9-7w-fDn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgA-zg-HgL">
+                                <rect key="frame" x="292" y="0.0" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="bab-2u-3EE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="更多" image="tab_arrow_y">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="moreAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Iyh-QA-kUA"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Vy-Cp-4mv">
+                                <rect key="frame" x="0.0" y="0.0" width="292" height="70"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="6Vy-Cp-4mv" firstAttribute="leading" secondItem="jc9-7w-fDn" secondAttribute="leading" id="8Ms-aL-yTQ"/>
+                            <constraint firstItem="hgA-zg-HgL" firstAttribute="leading" secondItem="6Vy-Cp-4mv" secondAttribute="trailing" id="CMp-AN-tfA"/>
+                            <constraint firstAttribute="bottom" secondItem="hgA-zg-HgL" secondAttribute="bottom" id="K4F-yE-NDj"/>
+                            <constraint firstItem="6Vy-Cp-4mv" firstAttribute="top" secondItem="jc9-7w-fDn" secondAttribute="top" id="MBT-s8-Yes"/>
+                            <constraint firstAttribute="trailing" secondItem="hgA-zg-HgL" secondAttribute="trailing" constant="13" id="NEK-Fl-vQn"/>
+                            <constraint firstAttribute="height" constant="70" id="cZH-OR-ybr"/>
+                            <constraint firstItem="hgA-zg-HgL" firstAttribute="top" secondItem="jc9-7w-fDn" secondAttribute="top" id="eZe-EY-JmN"/>
+                            <constraint firstAttribute="bottom" secondItem="6Vy-Cp-4mv" secondAttribute="bottom" id="kAU-ls-GXO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jc9-7w-fDn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LnY-eq-ezs"/>
+                    <constraint firstItem="jc9-7w-fDn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MfR-XF-wZj"/>
+                    <constraint firstAttribute="trailing" secondItem="jc9-7w-fDn" secondAttribute="trailing" id="zYC-Wl-oAA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="moreBackgroundView" destination="6Vy-Cp-4mv" id="7TZ-A0-tvL"/>
+                <outlet property="moreButton" destination="hgA-zg-HgL" id="iHX-je-Jiu"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tab_arrow_y" width="12" height="12"/>
+    </resources>
+</document>
